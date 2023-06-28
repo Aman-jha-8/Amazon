@@ -1,4 +1,4 @@
-export const todayDeal = [
+export const todayDeal = [ 
     {
         img : "https://m.media-amazon.com/images/I/41Diz41FkhL._AC_SY200_.jpg",
         discount : 32,

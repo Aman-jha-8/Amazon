@@ -1,4 +1,4 @@
-import { todayDeal } from "./todayDeal.js"
+import { todayDeal } from "./todayDeal.js" 
 
 let slideBtnLeft = document.getElementById("slide-btn-left")
 let slideBtnRight = document.getElementById("slide-btn-right")
@@ -65,7 +65,7 @@ sidebarCloseNavigationEl.addEventListener("click", () => {
 
 
 
-//today deals 
+//today deals
 console.log(todayDeal)
 let todayDealProductListEl = document.querySelector(".today_deals_product_list")
 console.log(todayDealProductListEl)
@@ -82,7 +82,7 @@ for (let i = 0; i < todayDeallength; i++) {
                 <div class="todayDeals_product_image">
                     <img src=${todayDeal[i].img} />
                 </div>
-            
+
 
 
             <div class="discount_Contaienr">
@@ -106,7 +106,7 @@ let startProduct = 0;
 
 today_deal_btn_prevEl.addEventListener("click", () => {
 
-   
+
     if(startProduct < 0){
         startProduct += 500
     }
@@ -120,7 +120,7 @@ today_deal_btn_prevEl.addEventListener("click", () => {
 
 today_deal_btn_nextEl.addEventListener("click", () => {
     // alert("next")
-    
+
     if(startProduct > -1500){
         startProduct -= 500
     }
@@ -128,8 +128,8 @@ today_deal_btn_nextEl.addEventListener("click", () => {
     today_deals_product_itemEl.forEach(el =>{
         el.style.transform = `translateX(${startProduct}%)`
     })
-    
-    
+
+
 })
 
 const backtop = document.querySelector(".backtop");
